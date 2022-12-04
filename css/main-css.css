@@ -16,6 +16,8 @@
 
 .header {
   display: flex;
+  flex-wrap: wrap;
+  gap: 2.0rem;
   justify-content: space-between;
   align-items: center;
   padding: 2.0rem;
@@ -27,7 +29,9 @@
 
 .header-menu {
   display: flex;
+  flex-wrap: wrap;
   gap: 4.0rem;
+
 }
 
 .header-menu a {
@@ -35,4 +39,50 @@
   display: inline-block;
   color: #ffffff;
   font-size: 1.8rem;
+  text-transform: uppercase;
+  position: relative;
 }
+.header-menu a:after {
+  content: "";
+  display: block;
+  height: 0.2rem;
+  width: 0rem;
+  background: yellow;
+  margin-top: 0.4rem;
+  transition: 0.3s;
+  position: absolute;
+
+}
+.header-menu a:hover:after {
+  width: 100%;
+}
+
+
+
+
+@media (max-width:800px) {
+  .header-menu {
+    gap: 2.0rem;
+  }
+  .header-menu a {
+    background: #111111;
+    padding: 1.2rem 1.6rem;
+    border-radius: 0.4rem;
+  }
+  .header-menu a:hover {
+    background-color: #2e2e2e;
+  }
+  .header a::after {
+    display: none;
+  }
+}
+@media (max-width:600px) {
+  .header-menu {
+    gap: 1.2rem;
+  }
+  .header-menu a {
+    padding: 0.8rem 1.2rem;
+    font-size: 1.4rem;
+  }
+}
+
