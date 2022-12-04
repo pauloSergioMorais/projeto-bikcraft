@@ -1,0 +1,26 @@
+/* ESTILO DE BOTÃO */
+
+.botao {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  background: linear-gradient(var(--cor-p1), var(--cor-p2));
+  border-radius: 0.4rem;
+  box-shadow: 0 1px 2px  rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  color: var(--cor-p5) ;
+  font-size: 1.8rem;
+  line-height: 1.33;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.botao:hover {
+  background: linear-gradient(var(--cor-p2), var(--cor-p4));
+}
+
+@media (max-width: 600px) {
+  .botao {
+    padding: 1.2rem 1.6rem;
+    font-size: 1.6rem;
+  }
+}
