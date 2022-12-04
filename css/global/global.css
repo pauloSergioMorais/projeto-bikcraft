@@ -15,6 +15,10 @@ img {
   display: block;
 }
 
+img[src$=".jpg"]{
+  border-radius: 0.8rem;
+}
+
 a {
   color: inherit;
 }

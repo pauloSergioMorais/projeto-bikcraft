@@ -34,15 +34,6 @@
 }
 
 
-@media (max-width: 1200px) {
-  .introducao h1 {
-    font-size: 4.8rem;
-  }
-  .introducao p {
-    font-size: 1.8rem;
-  }
-}
-
 @media (max-width: 800px) {
   .introducao-bg {
     background: var(--cor-c11);
